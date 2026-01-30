@@ -4,3 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+cranelift-isle = { version = "0.128.1", features = ["fancy-errors", "log", "logging"] }
+egg = "0.11.0"
+
+[patch.crates-io]
+egg = { path = "../egg" }
